@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 26</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <form method="post">
+      <fieldset class="fieldset">
+        <legend class="legend-inform title">Введіть данні</legend>
+
+        <!-- Name -->
+        <div class="inform">
+          <label class="data" for="first-name">Ім'я</label>
+          <input
+            id="first-name"
+            type="text"
+            name="name"
+            placeholder="Введіть ім'я"
+          />
+        </div>
+
+        <!-- Lastname -->
+        <div class="inform">
+          <label class="data" for="your-lastname">Прізвище</label>
+          <input
+            id="your-lastname"
+            type="text"
+            name="lastname"
+            placeholder="Введіть прізвище"
+          />
+        </div>
+
+        <!-- Birthday -->
+        <div class="inform">
+          <label class="data" for="your-date">Дата народження</label>
+          <input
+            id="your-date"
+            type="text"
+            name="date"
+            placeholder="Введіть дату народження"
+          />
+        </div>
+
+        <!-- Gender -->
+        <legend class="title">Стать</legend>
+        <div class="gender">
+          <input
+            id="female"
+            type="radio"
+            name="kind"
+            value="female-gender"
+            checked
+          />
+          <label for="female">Жіноча</label>
+        </div>
+        <div class="gender">
+          <input id="male" type="radio" name="kind" value="male-gender" />
+          <label for="male">Чоловіча</label>
+        </div>
+
+        <!-- City -->
+        <div class="inform">
+          <label class="information" for="your-city">Введіть місто</label>
+          <select id="your-city" name="city" size="1">
+            <option value="Odesa">Одеса</option>
+            <option value="Kyiv">Київ</option>
+            <option value="Lviv">Львів</option>
+            <option value="Mykolaiv">Миколаїв</option>
+          </select>
+        </div>
+
+        <!-- Address -->
+        <div class="title inform">
+          <label class="information" for="request">Адреса</label>
+          <textarea
+            id="request"
+            rows="5"
+            maxlength="50"
+            name="requests"
+            placeholder="70"
+          >
+          </textarea>
+        </div>
+
+        <!-- languages -->
+        <div class="languages-container">
+          <span class="title">Виберіть мови, якими володієте</span>
+          <div class="languages">
+            <input
+              id="language1"
+              type="checkbox"
+              name="your-language"
+              value="English"
+            />
+            <label for="language1">Англійська</label>
+          </div>
+          <div class="languages">
+            <input
+              id="language2"
+              type="checkbox"
+              name="your-language"
+              value="Ukrainian"
+            />
+            <label for="language2">Українська</label>
+          </div>
+          <div class="languages">
+            <input
+              id="language3"
+              type="checkbox"
+              name="your-language"
+              value="French"
+            />
+            <label for="language3">Французька</label>
+          </div>
+          <div class="languages">
+            <input
+              id="language4"
+              type="checkbox"
+              name="your-language"
+              value="Spanish"
+            />
+            <label for="language4">Іспанська</label>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="your-phone">
+          <label class="title" for="phone">Номер телефону</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="+38(0##)-##-####"
+          />
+        </div>
+      </fieldset>
+
+      <button class="button" type="submit">Зберегти</button>
+    </form>
+
+    <table class="table">
+      <th>Ваші особисті данні</th>
+      <tr>
+        <td class="table__name">Ім'я</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="table__lastname">Прізвище</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="table__date">Дата народження</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="table__gender">Стать</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="table__city">Місто</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="table__address">Адреса</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="table__languages">Мови, які ви знаєте</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="table__phone">Номер телефону</td>
+        <td></td>
+      </tr>
+    </table>
+    <script src="index.js"></script>
+  </body>
+</html>
